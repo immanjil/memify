@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "Memify",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to choose a meme. The active tab's body content is then replaced with a picture of the chosen meme. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "icons": {
+    "48": "icons/memify-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/memify-32.png",
+    "default_title": "Memify",
+    "default_popup": "popup/choose_meme.html"
+  },
+
+  "web_accessible_resources": [
+    "memes/meme1.jpg",
+    "memes/meme2.jpg",
+    "memes/meme3.jpg"  ]
+
+}
